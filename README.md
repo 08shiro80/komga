@@ -78,13 +78,6 @@ Administrative tools for database backup and maintenance:
 - Automatic cleanup of old backups
 - REST API for backup operations
 
-### 🌐 Reverse Proxy Support
-Enhanced IP tracking for accurate client identification:
-- Support for X-Forwarded-For, X-Real-IP headers
-- IPv4 and IPv6 support
-- Private IP detection
-- Debug endpoints for proxy configuration
-
 ## Installation
 
 Refer to the [website](https://komga.org/docs/category/installation) for instructions.
