@@ -19,9 +19,16 @@ Komga is a media server for your comics, mangas, BDs, magazines and eBooks.
 - Organize your library with collections and read lists
 - Edit metadata for your series and books
 - Import embedded metadata automatically
+- **Plugin system** for extending metadata providers - [Documentation](./PLUGIN_SYSTEM.md)
+- **Multi-language title support** with language priority system - [Documentation](./LANGUAGE_PRIORITY.md)
 - Webreader with multiple reading modes
+- **Enhanced reader features** (Tachidesk-like, webtoon splitting, EPUB optimization) - [Documentation](./READER_ENHANCEMENTS.md)
+- **Anonymous access** with age-based content restrictions - [Documentation](./ANONYMOUS_ACCESS.md)
 - Manage multiple users, with per-library access control, age restrictions, and labels restrictions
+- **Tag and genre blacklisting** for personalized content filtering
 - Offers a REST API, many community tools and scripts can interact with Komga
+- **Database backup and export** functionality with admin interface
+- **Reverse proxy IP tracking** for accurate client IP resolution
 - OPDS v1 and v2 support
 - Kobo Sync with your Kobo eReader
 - KOReader Sync
@@ -30,6 +37,53 @@ Komga is a media server for your comics, mangas, BDs, magazines and eBooks.
 - Duplicate pages detection and removal
 - Import books from outside your libraries directly into your series folder
 - Import ComicRack `cbl` read lists
+
+## Extended Features
+
+This fork includes several enhanced features:
+
+### 🔌 Plugin System
+Extensible plugin architecture for adding custom metadata providers. Load plugins from JAR files, download from GitHub, and manage them through the REST API.
+- [Plugin System Documentation](./PLUGIN_SYSTEM.md)
+
+### 🌍 Multi-Language Support
+Advanced language priority system for managing titles and summaries in multiple languages. Supports 20+ languages including Japanese romaji, Korean, Chinese, and more.
+- [Language Priority Documentation](./LANGUAGE_PRIORITY.md)
+
+### 📖 Reader Enhancements
+Enhanced reading experience with Tachidesk-like features:
+- Webtoon image splitting for tall images
+- EPUB performance optimization with lazy loading
+- Customizable reader settings per series
+- Multiple reading modes (LTR, RTL, vertical, webtoon, continuous)
+- [Reader Enhancements Documentation](./READER_ENHANCEMENTS.md)
+
+### 🔓 Anonymous Access
+Optional authentication system with age-based content restrictions:
+- Allow unauthenticated users to browse non-adult content
+- Configurable age restrictions (ESRB, PEGI, FSK ratings)
+- Library-level anonymous access control
+- [Anonymous Access Documentation](./ANONYMOUS_ACCESS.md)
+
+### 🛡️ Content Filtering
+Personalized content filtering with tag and genre blacklisting:
+- User-specific blacklists for tags and genres
+- Filter summary and management API
+- Seamless integration with existing restrictions
+
+### 💾 Database Management
+Administrative tools for database backup and maintenance:
+- Create backups with optional image inclusion
+- Download, list, and manage backups
+- Automatic cleanup of old backups
+- REST API for backup operations
+
+### 🌐 Reverse Proxy Support
+Enhanced IP tracking for accurate client identification:
+- Support for X-Forwarded-For, X-Real-IP headers
+- IPv4 and IPv6 support
+- Private IP detection
+- Debug endpoints for proxy configuration
 
 ## Installation
 
