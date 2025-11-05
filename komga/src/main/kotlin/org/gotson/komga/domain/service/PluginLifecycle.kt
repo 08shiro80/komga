@@ -22,8 +22,8 @@ import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Service
 import java.io.File
 import java.time.LocalDateTime
-import javax.annotation.PostConstruct
-import javax.annotation.PreDestroy
+import jakarta.annotation.PostConstruct
+import jakarta.annotation.PreDestroy
 
 private val logger = KotlinLogging.logger {}
 
